@@ -1,0 +1,1 @@
+cmd_/home/jianglei/deep_in_kernel/data_structure/list/Module.symvers := sed 's/\.ko$$/\.o/' /home/jianglei/deep_in_kernel/data_structure/list/modules.order | scripts/mod/modpost -m -a  -o /home/jianglei/deep_in_kernel/data_structure/list/Module.symvers -e -i Module.symvers   -T -
