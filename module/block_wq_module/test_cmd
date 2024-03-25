@@ -1,0 +1,7 @@
+as root:
+
+first termianl:
+	cat /dev/my_demo_dev &
+
+second terminal:
+	echo "char string" > /dev/my_demo_dev
