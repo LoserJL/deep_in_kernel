@@ -122,6 +122,11 @@ static void __exit my_demo_exit(void)
 {
 	printk("removing device\n");
 
+	if (my_class) {
+		device_destroy(my_class, dev);
+		class_destroy(my_class);
+	}
+
 	if (demo_cdev)
 		cdev_del(demo_cdev);
 
